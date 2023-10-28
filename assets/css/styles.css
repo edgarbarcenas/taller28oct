@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root {
+  --font-primary: 'Red Hat Display', sans-serif; /* weigths 900 500  */
+  --color-teal: hsl(192, 37%, 48%);
+  --color-purple: hsl(268, 34%, 53%);
+  --color-sky-blue: hsl(192, 90%, 77%);
+  --color-lavender: hsl(268, 100%, 86%);
+  --color-black: hsl(240, 21%, 20%);
+  --color-gray: hsl(240, 10%, 57%);
+  --color-white: hsl(0, 0%, 98%);
+  --color-button-hover-primary: hsl(192, 54%, 64%);
+  --color-button-hover-secondary: hsl(267, 64%, 71%);
+  --color-light-gray: rgb(216, 216, 216);
+}
+
+*, *::before, *::after { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-black);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.logo {
+  margin-top: 80px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.introduction_content__img {
+  flex-basis: 30%;
+  overflow: hidden;
+  position: relative;
+}
+
+.introduction_text{
+  text-align: center;
+  font-size: 48px;
+}
+
+.section__img {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section__img img {
+  flex-basis: 30%;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.section__number-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 5;
+  margin-bottom: -28px;
+  align-items: center;
+}
+.section__number {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color-gray);
+}
+
+.section__line {
+  width: 56px;
+  height: 84px;
+  border-left: 1px solid var(--color-light-gray);
+  transform: translateX(50%);
+}
+
+.section__badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid var(--color-light-gray);
+}
